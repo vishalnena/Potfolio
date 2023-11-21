@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/ebfc5ff9e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="vishal_profile/logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>&nbsp;&nbsp;
+            <h1>Hi, I'm <span>Vishal</span> Nenawate <br> From Pune</h1>
+        </div>
+       </div>
+    </div>
+                           
+    
+    <!---ABOUT US--->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                  <img src="vishal_profile/IMG.png" alt="">
+                </div>
+                <div class="col-8">
+                  <h1>About Me</h1>
+                  <p>Looking forward to an opportunity for working in a dynamic, challenging environment, where <br>I can
+                    utilize my skills for developing my career and for the growth of the organization.
+                    </p>
+                    <div class="tab-tittle">
+                        <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('Education')">Education</p>
+                    </div><br>
+                    <div class="tab-containt active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages :</span><br><br>   Core Java , JavaScript , C#
+                            </li>
+                            <li><span> Web Technology :</span><br><br>  HTML5 , CSS3, Bootstrap5 </li>
+                            <li><span> DataBase :</span><br><br>  MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containt" id="Education">
+                        <ul>
+                            <li><span>Master of Computer Application (MCA)</span><br><br> from Pratibha Institute , Chinchwad | 7.2 CGPA (Nov ’21-Aug ’23)
+                            </li><br>
+                            <li><span>Bachelors's of Computer Application (BCA)</span><br><br> from Dr D.Y Patil , Pimpri | 8.2 CGPA (Apr ’19 - Aug ’21)
+                            </li><br>
+                            <li><span>XII (HSC)</span><br><br> from Padmashree Dr D.Y Patil , Pune (Feb ’17)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-containt" id="Experience">
+                        <ul>
+                            <li><span> WEB DEVELOPMENT INTERN | Opstech Solution (Dec ‘2022- Mar ‘2023)
+                            </span><br><br>Worked on website design and development using HTML5, CSS and Bootstrap5.
+                        </li><br>
+                            <li>Assisted in the implementation of responsive design for mobile devices.
+                            </li><br>
+                            <li>Redesign and develop an existing web site.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------services-->
+
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">Services</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga cumque nulla, tempora unde repudiandae dicta porro beatae minus possimus laudantium nesciunt facere. Aliquam exercitationem accusantium in minus placeat. Officiis.
+                </p>
+                <a href="">learn more</a>
+              </div> 
+              <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>web design</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, voluptatem dolore tenetur voluptatum quaerat repellendus iure ipsam quasi corporis! Officiis eum necessitatibus vitae. Eius illo distinctio quisquam ea id repellendus.
+                </p>
+                <a href="">learn more</a>
+              </div>
+              <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>web design</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum unde quod minus corporis amet cupiditate, iste illo, non dolorum quos voluptatibus deleniti totam aliquam dignissimos eveniet quas accusamus ratione velit?
+                </p>
+                <a href="">learn more</a>
+              </div> 
+            </div>
+        </div>
+      </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontaints = document.getElementsByClassName("tab-containt");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontaint of tabcontaints){
+                tabcontaint.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
